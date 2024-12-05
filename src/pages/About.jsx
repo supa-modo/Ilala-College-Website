@@ -110,7 +110,7 @@ export const About = () => {
         {/* Why Choose Us Section - New Two-Column Layout */}
         <div>
           <h2 className="text-3xl text-center font-bold text-green-700 px-4 mt-10">
-            Why Should You Choose Ilala City College
+            Why Should You Choose City Institute of Health and Allied Sciences
           </h2>
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8 p-6">
             {/* Left Column - Text Content */}
@@ -121,9 +121,9 @@ export const About = () => {
               className="text-xl text-gray-700"
             >
               <p>
-                <strong>
-                  Ilala City College of Health and Allied Sciences
-                </strong>{" "}
+                <span className="font-semibold text-green-800">
+                  City Institute of Health and Allied Sciences Ilala Campus
+                </span>{" "}
                 embraces innovation and utilizes the very latest methods of
                 teaching, including simulated ward environments and
                 purpose-built facilities. Being a health student is both an

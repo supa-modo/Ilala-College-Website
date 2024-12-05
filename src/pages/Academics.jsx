@@ -27,7 +27,7 @@ export const Academics = () => {
               initial={{ opacity: 0, y: 50 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ delay: index * 0.2 }}
-              className="bg-blue-50 p-8 rounded-xl text-center hover:shadow-xl transition"
+              className="bg-blue-100 p-8 rounded-xl text-center hover:shadow-xl transition"
             >
               <div className="mx-auto w-20 h-20 mb-2 flex items-center justify-center text-green-700">
                 {IconMap[program.icon]}

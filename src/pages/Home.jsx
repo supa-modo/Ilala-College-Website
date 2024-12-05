@@ -7,13 +7,27 @@ import college2 from "../assets/images/college4.jpg";
 import college3 from "../assets/images/college5.jpg";
 import college4 from "../assets/images/college2.jpg";
 import college5 from "../assets/images/college1.jpg";
+import college9 from "../assets/images/college0.jpg";
+import college6 from "../assets/images/college12.jpg";
+import college7 from "../assets/images/college13.jpg";
+import college8 from "../assets/images/college15.jpg";
 import { Academics } from "./Academics";
 
 export const Home = () => {
   const [currentImageIndex, setCurrentImageIndex] = useState(0);
 
   // Carousel images - replace with actual college images
-  const carouselImages = [college1, college2, college3, college4, college5];
+  const carouselImages = [
+    college1,
+    college2,
+    college3,
+    college4,
+    college5,
+    college6,
+    college7,
+    college8,
+    college9,
+  ];
 
   // Auto-switch carousel images every 5 seconds
   useEffect(() => {
