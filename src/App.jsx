@@ -1,54 +1,31 @@
 import React from "react";
-import { BrowserRouter as Router, Routes, Route, Link } from "react-router-dom";
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import { motion, AnimatePresence } from "framer-motion";
+import Navbar from "./components/Navbar";
+import Footer from "./components/Footer";
+import { Home } from "./pages/Home";
+import { About } from "./pages/About";
+import { Academics } from "./pages/Academics";
+import { Admissions } from "./pages/Admissions";
+import { Gallery } from "./pages/Gallery";
+import { Contact } from "./pages/Contact";
 
-// Import components
-import {
-  Navigation,
-  Hero,
-  AboutSection,
-  ProgramsSection,
-  Footer,
-} from "./components/Hero";
-
-// Page Components
-const HomePage = () => (
-  <>
-    <Hero />
-    <AboutSection />
-    <ProgramsSection />
-  </>
-);
-
-const ProgramsPage = () => (
-  <div className="container mx-auto py-16">
-    <h1 className="text-4xl font-bold text-center mb-12">Academic Programs</h1>
-    {/* Detailed programs list */}
-  </div>
-);
-
-const AdmissionsPage = () => (
-  <div className="container mx-auto py-16">
-    <h1 className="text-4xl font-bold text-center mb-12">
-      Admissions Information
-    </h1>
-    {/* Admissions details */}
-  </div>
-);
-
+// Main App Component
 const App = () => {
   return (
     <Router>
-      <div className="flex flex-col min-h-screen">
-        <Navigation />
-
-        <main className="flex-grow mt-16">
+      <div className="min-h-screen flex flex-col">
+        <Navbar />
+        <AnimatePresence mode="wait">
           <Routes>
-            <Route path="/" element={<HomePage />} />
-            <Route path="/programs" element={<ProgramsPage />} />
-            <Route path="/admissions" element={<AdmissionsPage />} />
+            <Route path="/" element={<Home />} />
+            <Route path="/about" element={<About />} />
+            <Route path="/academics" element={<Academics />} />
+            <Route path="/admissions" element={<Admissions />} />
+            <Route path="/gallery" element={<Gallery />} />
+            <Route path="/contact" element={<Contact />} />
           </Routes>
-        </main>
-
+        </AnimatePresence>
         <Footer />
       </div>
     </Router>
