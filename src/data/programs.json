@@ -1,0 +1,58 @@
+[
+  {
+    "icon": "FaBook",
+    "name": "Clinical Medicine",
+    "description": [
+      "Four (4) Passes in non-religious subjects including 'D' passes in Physics, Biology and Chemistry.",
+      "Tuition Fee: 1,400,000/="
+    ]
+  },
+  {
+    "icon": "FaBook",
+    "name": "Pharmaceutical Sciences",
+    "description": [
+      "Four (4) Passes in non-religious subjects including 'D' passes in Biology and Chemistry.",
+      "Tuition Fee: 1,400,000/="
+    ]
+  },
+  {
+    "icon": "FaBook",
+    "name": "Social Work",
+    "description": [
+      "Four (4) Passes in non-religious subjects.",
+      "Tuition Fee: 600,000/="
+    ]
+  },
+  {
+    "icon": "FaBook",
+    "name": "Physiotherapy",
+    "description": [
+      "Four (4) Passes in non-religious subjects including 'D' passes in Physics, Biology and Chemistry.",
+      "Tuition Fee: 1,500,000/="
+    ]
+  },
+  {
+    "icon": "FaBook",
+    "name": "Optometry",
+    "description": [
+      "Five (5) Passes in non-religious subjects including 'D' passes in Physics, Biology, Chemistry, Mathematics, and English.",
+      "Tuition Fee: 1,500,000/="
+    ]
+  },
+  {
+    "icon": "FaBook",
+    "name": "Health Records and Information Technology",
+    "description": [
+      "Four (4) Passes in non-religious subjects including 'D' passes in Physics, Biology and Chemistry.",
+      "Tuition Fee: 1,500,000/="
+    ]
+  },
+  {
+    "icon": "FaBook",
+    "name": "Diagnostic Radiography",
+    "description": [
+      "Five (5) Passes in non-religious subjects including 'D' passes in Physics, Biology, Chemistry, Mathematics, and English.",
+      "Tuition Fee: 1,500,000/="
+    ]
+  }
+]

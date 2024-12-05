@@ -47,14 +47,17 @@ export const About = () => {
       initial={{ opacity: 0 }}
       animate={{ opacity: 1 }}
       exit={{ opacity: 0 }}
-      className="min-h-screen bg-gray-50 rounded-l-2xl py-16"
+      className="min-h-screen bg-gray-50 rounded-t-3xl pb-16 relative"
     >
-      <div className="container mx-auto px-4">
+      {/* Top About Us Gradient */}
+      <div className="absolute inset-0 bg-gradient-to-t from-transparent via-transparent to-gray-100 pointer-events-none"></div>
+
+      <div className="container mx-auto px-4 relative z-10">
         <h2 className="text-4xl font-bold text-center text-green-700 mb-12">
           About Our College
         </h2>
-        <div className="bg-white shadow-lg rounded-xl overflow-hidden">
-          <div className="flex border-b">
+        <div className="bg-white shadow-lg rounded-t-3xl rounded-xl overflow-hidden">
+          <div className="flex border-y">
             {Object.keys(tabs).map((tab) => (
               <button
                 key={tab}
@@ -182,67 +185,6 @@ export const About = () => {
                 ))}
               </div>
             </motion.div>
-          </div>
-        </div>
-
-        {/* student organization section */}
-        <div>
-          <h2 className="text-2xl font-bold  text-green-700 px-4 mt-10">
-            Student Organization
-          </h2>
-          <div className="p-6">
-            <motion.p
-              key={activeTab}
-              initial={{ opacity: 0, y: 20 }}
-              animate={{ opacity: 1, y: 0 }}
-              transition={{ delay: 0.4 }}
-              className="text-xl text-gray-700"
-            >
-              <p>
-                We value leadership and leadership skills in human life.
-                KiCCOHAS is also determined to build students in leadership
-                skills by providing free seminars of leadership and
-                entrepreneurship skills. To ensure leadership skills is imparted
-                to students, built and strengthened students are allowed to have
-                their own democratically elected leaders in their student union.
-                The student government plays a key role to serve the interests
-                of students and the link between College management and students
-                as stipulated in Charter and students' organization
-                constitution.
-              </p>
-            </motion.p>
-          </div>
-        </div>
-
-        {/* student organization section */}
-        <div>
-          <h2 className="text-2xl font-bold  text-green-700 px-4 mt-10">
-            Student Wellbeing and Health
-          </h2>
-          <div className="p-6">
-            <motion.p
-              key={activeTab}
-              initial={{ opacity: 0, y: 20 }}
-              animate={{ opacity: 1, y: 0 }}
-              transition={{ delay: 0.4 }}
-              className="text-xl text-gray-700"
-            >
-              <p>
-                This is a medical college where the health and well-being of our
-                students are among our top priorities. We believe that ensuring
-                their good health is essential for them to effectively apply the
-                knowledge they acquire here to care for others. We are committed
-                to preventing any form of suffering caused by illnesses or
-                diseases among our students. Students with health insurance are
-                encouraged to utilize their coverage. However, if their medical
-                expenses exceed the limits of their insurance, they will still
-                receive the necessary medical services, but they will be
-                responsible for covering the additional costs. For students
-                without health insurance, there is no need to worry. By
-                contributing a capitation fee, they will be provided with
-                National Health Insurance Cards to access medical services.
-              </p>
-            </motion.p>
           </div>
         </div>
       </div>

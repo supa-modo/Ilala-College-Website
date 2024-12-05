@@ -1,46 +1,25 @@
-import React, { useState } from "react";
+import React from "react";
 import { motion } from "framer-motion";
-import {
-  MapPin,
-  Book,
-  GraduationCap,
-  Users,
-  Mail,
-  Phone,
-  Send,
-} from "lucide-react";
+import { FaBook, FaBookmark } from "react-icons/fa";
+import programs from "../data/programs.json";
+import { LuComponent } from "react-icons/lu";
+
+const IconMap = {
+  FaBook: <FaBook size={50} />,
+};
 
 export const Academics = () => {
-  const programs = [
-    {
-      icon: <Book />,
-      name: "Undergraduate",
-      description: "Diverse range of bachelor's programs across disciplines.",
-    },
-    {
-      icon: <GraduationCap />,
-      name: "Postgraduate",
-      description: "Advanced degrees with research opportunities.",
-    },
-    {
-      icon: <Users />,
-      name: "Research",
-      description: "Cutting-edge research across multiple domains.",
-    },
-  ];
-
   return (
     <motion.div
       initial={{ opacity: 0 }}
       animate={{ opacity: 1 }}
       exit={{ opacity: 0 }}
-      className="min-h-screen bg-white py-16"
+      className="min-h-screen bg-white py-6 rounded-b-3xl"
     >
       <div className="container mx-auto px-4">
-        <h2 className="text-4xl font-bold text-center text-blue-900 mb-12">
-          Academic Programs
+        <h2 className="text-3xl font-bold text-center text-green-700 mb-12">
+          Academic Programs Offered
         </h2>
-
         <div className="grid md:grid-cols-3 gap-8">
           {programs.map((program, index) => (
             <motion.div
@@ -50,13 +29,25 @@ export const Academics = () => {
               transition={{ delay: index * 0.2 }}
               className="bg-blue-50 p-8 rounded-xl text-center hover:shadow-xl transition"
             >
-              <div className="mx-auto w-20 h-20 mb-6 flex items-center justify-center text-blue-600">
-                {program.icon}
+              <div className="mx-auto w-20 h-20 mb-2 flex items-center justify-center text-green-700">
+                {IconMap[program.icon]}
               </div>
-              <h3 className="text-2xl font-semibold mb-4 text-blue-900">
+              <h3 className="text-2xl font-semibold mb-4 text-green-900">
                 {program.name}
               </h3>
-              <p className="text-gray-700">{program.description}</p>
+              <ul className="text-gray-500 text-start px-2 font-semibold">
+                {program.description.map((item, idx) => (
+                  <li key={idx} className="flex mb-2">
+                    <div className="flex-shrink-0">
+                      <LuComponent
+                        size={14}
+                        className="text-green-700 mt-[6px] mr-2"
+                      />
+                    </div>
+                    <div className="flex-grow">{item}</div>
+                  </li>
+                ))}
+              </ul>
             </motion.div>
           ))}
         </div>
