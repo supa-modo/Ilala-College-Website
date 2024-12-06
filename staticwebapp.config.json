@@ -1,0 +1,43 @@
+{
+  "routes": [
+    {
+      "route": "/",
+      "serve": "/index.html",
+      "statusCode": 200
+    },
+    {
+      "route": "/about",
+      "serve": "/index.html",
+      "statusCode": 200
+    },
+    {
+      "route": "/programmes",
+      "serve": "/index.html",
+      "statusCode": 200
+    },
+    {
+      "route": "/admissions",
+      "serve": "/index.html",
+      "statusCode": 200
+    },
+    {
+      "route": "/gallery",
+      "serve": "/index.html",
+      "statusCode": 200
+    },
+    {
+      "route": "/contact",
+      "serve": "/index.html",
+      "statusCode": 200
+    },
+    {
+      "route": "/*",
+      "serve": "/index.html",
+      "statusCode": 200
+    }
+  ],
+  "navigationFallback": {
+    "rewrite": "/index.html",
+    "exclude": ["/images/*", "/css/*", "/js/*", "/favicon.ico"]
+  }
+}
