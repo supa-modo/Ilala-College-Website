@@ -8,7 +8,6 @@ import college5 from "../assets/images/ilalaEx9.jpeg";
 import college6 from "../assets/images/ilalaEx3.jpeg";
 import college7 from "../assets/images/ilalaEx6.jpeg";
 import college8 from "../assets/images/ilalaEx11.jpeg";
-import college9 from "../assets/images/ilalaEx8.jpeg";
 
 export const About = () => {
   const [activeTab, setActiveTab] = useState("mission");
