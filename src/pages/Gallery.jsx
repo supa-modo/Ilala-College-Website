@@ -1,25 +1,28 @@
 import React, { useState } from "react";
 import { motion } from "framer-motion";
-import {
-  MapPin,
-  Book,
-  GraduationCap,
-  Users,
-  Mail,
-  Phone,
-  Send,
-} from "lucide-react";
+import college1 from "../assets/images/college3.jpg";
+import college2 from "../assets/images/college4.jpg";
+import college3 from "../assets/images/college5.jpg";
+import college4 from "../assets/images/college2.jpg";
+import college5 from "../assets/images/college1.jpg";
+import college9 from "../assets/images/college0.jpg";
+import college6 from "../assets/images/college12.jpg";
+import college7 from "../assets/images/college13.jpg";
+import college8 from "../assets/images/college15.jpg";
 
 export const Gallery = () => {
   const [selectedImage, setSelectedImage] = useState(null);
 
   const images = [
-    "/campus1.jpg",
-    "/campus2.jpg",
-    "/campus3.jpg",
-    "/campus4.jpg",
-    "/campus5.jpg",
-    "/campus6.jpg",
+    college1,
+    college2,
+    college3,
+    college4,
+    college5,
+    college6,
+    college7,
+    college8,
+    college9,
   ];
 
   return (
@@ -29,7 +32,9 @@ export const Gallery = () => {
       exit={{ opacity: 0 }}
       className="container mx-auto p-6"
     >
-      <h2 className="text-3xl font-bold mb-6 text-center">Campus Gallery</h2>
+      <h2 className="text-3xl font-bold mb-6 text-red-700 text-center">
+        Ilala Campus City Institute Gallery
+      </h2>
 
       <div className="grid grid-cols-3 gap-4">
         {images.map((image, index) => (

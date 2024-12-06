@@ -6,14 +6,15 @@ export default {
       colors: {
         // Customize your college colors here
         primary: {
-          DEFAULT: "#0066CC",
-          light: "#3385FF",
-          dark: "#004C99",
+          DEFAULT: "rgba(92, 162, 146, 1)", // Main primary color
+          light: "rgba(70, 163, 150, 1)", // Slightly lighter version
+          lighter: "rgba(70, 150, 150, 1)", // Slightly lighter version
+          dark: "rgba(70, 122, 110, 1)", // A darker shade
         },
         secondary: {
-          DEFAULT: "#FFB300",
-          light: "#FFC947",
-          dark: "#C68400",
+          DEFAULT: "rgba(70, 122, 110, 1)", // Darker version of primary
+          light: "rgba(70, 122, 110, 0.7)", // Slightly transparent version
+          dark: "rgba(50, 87, 78, 1)", // Even darker shade
         },
       },
       fontFamily: {

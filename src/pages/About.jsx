@@ -50,7 +50,7 @@ export const About = () => {
       className="min-h-screen bg-gray-50 rounded-l-2xl py-16"
     >
       <div className="container mx-auto px-4">
-        <h2 className="text-4xl font-bold text-center text-green-700 mb-12">
+        <h2 className="text-4xl font-bold text-center text-secondary mb-12">
           About Our College
         </h2>
         <div className="bg-white shadow-lg rounded-xl overflow-hidden">
@@ -61,7 +61,7 @@ export const About = () => {
                 onClick={() => setActiveTab(tab)}
                 className={`w-full font-semibold py-4 ${
                   activeTab === tab
-                    ? "bg-green-700 text-white"
+                    ? "bg-primary-light text-white"
                     : "bg-gray-100 text-gray-600 hover:bg-gray-200"
                 }`}
               >
@@ -82,7 +82,7 @@ export const About = () => {
         </div>
         {/* History Section */}
         <div>
-          <h2 className="text-2xl font-bold  text-green-700 px-4 mt-10">
+          <h2 className="text-2xl font-bold  text-primary-lighter px-4 mt-10">
             History
           </h2>
           <div className="p-6">
@@ -175,7 +175,7 @@ export const About = () => {
                     onClick={() => setCurrentImageIndex(index)}
                     className={`w-3 h-3 rounded-full ${
                       index === currentImageIndex
-                        ? "bg-green-700"
+                        ? "bg-primary-lighter"
                         : "bg-gray-300"
                     }`}
                   />
@@ -187,7 +187,7 @@ export const About = () => {
 
         {/* student organization section */}
         <div>
-          <h2 className="text-2xl font-bold  text-green-700 px-4 mt-10">
+          <h2 className="text-2xl font-bold  text-primary-lighter px-4 mt-10">
             Student Organization
           </h2>
           <div className="p-6">
@@ -216,7 +216,7 @@ export const About = () => {
 
         {/* student organization section */}
         <div>
-          <h2 className="text-2xl font-bold  text-green-700 px-4 mt-10">
+          <h2 className="text-2xl font-bold  text-primary-lighter px-4 mt-10">
             Student Wellbeing and Health
           </h2>
           <div className="p-6">

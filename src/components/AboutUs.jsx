@@ -53,7 +53,7 @@ export const About = () => {
       <div className="absolute inset-0 bg-gradient-to-t from-transparent via-transparent to-gray-100 pointer-events-none"></div>
 
       <div className="container mx-auto px-4 relative z-10">
-        <h2 className="text-4xl font-bold text-center text-green-700 mb-12">
+        <h2 className="text-4xl font-bold text-center text-primary-dark mb-12">
           About Our College
         </h2>
         <div className="bg-white shadow-lg rounded-t-3xl rounded-xl overflow-hidden">
@@ -64,7 +64,7 @@ export const About = () => {
                 onClick={() => setActiveTab(tab)}
                 className={`w-full font-semibold py-4 ${
                   activeTab === tab
-                    ? "bg-green-700 text-white"
+                    ? "bg-primary-light text-white"
                     : "bg-gray-100 text-gray-600 hover:bg-gray-200"
                 }`}
               >
@@ -85,7 +85,7 @@ export const About = () => {
         </div>
         {/* History Section */}
         <div>
-          <h2 className="text-2xl font-bold  text-green-700 px-4 mt-10">
+          <h2 className="text-2xl font-bold  text-primary-lighter px-4 mt-10">
             History
           </h2>
           <div className="p-6">
@@ -112,7 +112,7 @@ export const About = () => {
 
         {/* Why Choose Us Section - New Two-Column Layout */}
         <div>
-          <h2 className="text-3xl text-center font-bold text-green-700 px-4 mt-10">
+          <h2 className="text-3xl text-center font-bold text-primary-lighter px-4 mt-10">
             Why Should You Choose Ilala City College
           </h2>
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8 p-6">
@@ -124,9 +124,9 @@ export const About = () => {
               className="text-xl text-gray-700"
             >
               <p>
-                <strong>
+                <span className="font-semibold text-primary-lighter">
                   Ilala City College of Health and Allied Sciences
-                </strong>{" "}
+                </span>{" "}
                 embraces innovation and utilizes the very latest methods of
                 teaching, including simulated ward environments and
                 purpose-built facilities. Being a health student is both an
@@ -177,9 +177,7 @@ export const About = () => {
                     key={index}
                     onClick={() => setCurrentImageIndex(index)}
                     className={`w-3 h-3 rounded-full ${
-                      index === currentImageIndex
-                        ? "bg-green-700"
-                        : "bg-gray-300"
+                      index === currentImageIndex ? "bg-primary" : "bg-gray-300"
                     }`}
                   />
                 ))}

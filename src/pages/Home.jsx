@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from "react";
+import { useNavigate } from "react-router-dom";
 import { motion } from "framer-motion";
 import { About } from "../components/AboutUs";
 import { Contact } from "./Contact";
@@ -11,10 +12,11 @@ import college9 from "../assets/images/college0.jpg";
 import college6 from "../assets/images/college12.jpg";
 import college7 from "../assets/images/college13.jpg";
 import college8 from "../assets/images/college15.jpg";
-import { Academics } from "./Academics";
+import { Academics } from "./Programmes";
 
 export const Home = () => {
   const [currentImageIndex, setCurrentImageIndex] = useState(0);
+  const navigate = useNavigate();
 
   // Carousel images - replace with actual college images
   const carouselImages = [
@@ -109,14 +111,21 @@ export const Home = () => {
               className="flex space-x-4"
             >
               <button
-                className="bg-green-700 text-white font-semibold px-6 py-3 rounded-lg 
-                hover:bg-green-600 transition transform hover:scale-105 shadow-lg"
+                onClick={() => navigate("/programmes")}
+                className="bg-primary-light text-white font-semibold px-6 py-3 rounded-lg 
+                hover:bg-secondary transition transform hover:scale-105 shadow-lg"
               >
                 Explore Programs
               </button>
               <button
-                className="bg-white text-green-700 font-semibold px-6 py-3 rounded-lg 
-                hover:bg-gray-100 transition transform hover:scale-105 shadow-lg"
+                onClick={() =>
+                  window.open(
+                    "https://application.cityinstitute.ac.tz/",
+                    "_blank"
+                  )
+                }
+                className="bg-white text-secondary font-semibold px-6 py-3 rounded-lg 
+             hover:bg-gray-100 transition transform hover:scale-105 shadow-lg"
               >
                 Apply Now
               </button>
@@ -134,7 +143,7 @@ export const Home = () => {
 
           {/* Join Us section */}
           <div>
-            <h2 className="text-3xl font-bold text-center text-green-700 px-4 mt-10">
+            <h2 className="text-3xl font-bold text-center text-secondary px-4 mt-10">
               Join Us
             </h2>
             <div className="p-4 text-center">
@@ -143,8 +152,14 @@ export const Home = () => {
                 now!!
               </p>
               <button
-                className="bg-green-700 text-white font-semibold px-20 py-3 rounded-lg 
-                hover:bg-green-600 transition transform hover:scale-105 shadow-lg"
+                onClick={() =>
+                  window.open(
+                    "https://application.cityinstitute.ac.tz/",
+                    "_blank"
+                  )
+                }
+                className="bg-primary-light text-white font-semibold px-20 py-3 rounded-lg 
+                hover:bg-primary-lighter transition transform hover:scale-105 shadow-lg"
               >
                 Apply Now
               </button>

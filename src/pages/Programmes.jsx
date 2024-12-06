@@ -17,8 +17,8 @@ export const Academics = () => {
       className="min-h-screen bg-white py-6 rounded-b-3xl"
     >
       <div className="container mx-auto px-4">
-        <h2 className="text-3xl font-bold text-center text-green-700 mb-12">
-          Academic Programs Offered
+        <h2 className="text-3xl font-bold text-center text-secondary mb-12">
+          Academic Programmes Offered
         </h2>
         <div className="grid md:grid-cols-3 gap-8">
           {programs.map((program, index) => (
@@ -29,10 +29,10 @@ export const Academics = () => {
               transition={{ delay: index * 0.2 }}
               className="bg-blue-100 p-8 rounded-xl text-center hover:shadow-xl transition"
             >
-              <div className="mx-auto w-20 h-20 mb-2 flex items-center justify-center text-green-700">
+              <div className="mx-auto w-20 h-20 mb-2 flex items-center justify-center text-primary-lighter">
                 {IconMap[program.icon]}
               </div>
-              <h3 className="text-2xl font-semibold mb-4 text-green-900">
+              <h3 className="text-2xl font-semibold mb-4 text-secondary">
                 {program.name}
               </h3>
               <ul className="text-gray-500 text-start px-2 font-semibold">

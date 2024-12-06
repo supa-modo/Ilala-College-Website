@@ -32,13 +32,13 @@ export const Contact = () => {
       className="  py-16"
     >
       <div className="container mx-auto px-4">
-        <h2 className="text-4xl font-bold text-center text-green-700 mb-12">
+        <h2 className="text-4xl font-bold text-center text-primary-dark mb-12">
           Contact Us
         </h2>
 
         <div className="grid md:grid-cols-2 gap-10">
           <div className="bg-gray-200 p-8 rounded-xl shadow-lg">
-            <h3 className="text-2xl font-semibold mb-4 text-green-700">
+            <h3 className="text-2xl font-semibold mb-4 text-primary-dark">
               Send us a Message or Enquiry
             </h3>
             <form onSubmit={handleSubmit}>
@@ -49,7 +49,7 @@ export const Contact = () => {
                   name="name"
                   value={formData.name}
                   onChange={handleChange}
-                  className="w-full px-4 py-2 text-gray-500 text-lg border rounded-lg focus:outline-none focus:ring-2 focus:ring-green-700"
+                  className="w-full px-4 py-2 text-gray-500 text-lg border rounded-lg focus:outline-none focus:ring-2 focus:ring-primary-light"
                   required
                 />
               </div>
@@ -60,7 +60,7 @@ export const Contact = () => {
                   name="email"
                   value={formData.email}
                   onChange={handleChange}
-                  className="w-full px-4 py-2 text-gray-500 text-lg border rounded-lg focus:outline-none focus:ring-2 focus:ring-green-500"
+                  className="w-full px-4 py-2 text-gray-500 text-lg border rounded-lg focus:outline-none focus:ring-2 focus:ring-primary-light"
                   required
                 />
               </div>
@@ -70,14 +70,14 @@ export const Contact = () => {
                   name="message"
                   value={formData.message}
                   onChange={handleChange}
-                  className="w-full px-4 py-3 text-gray-500 border rounded-lg focus:outline-none focus:ring-2 focus:ring-green-500"
+                  className="w-full px-4 py-3 text-gray-500 border rounded-lg focus:outline-none focus:ring-2 focus:ring-primary-light"
                   rows="4"
                   required
                 ></textarea>
               </div>
               <button
                 type="submit"
-                className="w-full bg-green-700 text-white font-semibold py-3 rounded-lg hover:bg-green-600 transition flex items-center justify-center"
+                className="w-full bg-primary-light text-white font-semibold py-3 rounded-lg hover:bg-primary-lighter hover:shadow-xl transition flex items-center justify-center"
               >
                 <Send className="mr-2" /> Send Message
               </button>
@@ -85,18 +85,18 @@ export const Contact = () => {
           </div>
 
           <div className="bg-gray-200 p-8 rounded-xl shadow-lg">
-            <h3 className="text-2xl font-semibold mb-6 text-green-700">
+            <h3 className="text-2xl font-semibold mb-6 text-primary-light">
               Contact Information
             </h3>
             <div className="space-y-4 font-semibold">
               <div className="flex items-center">
-                <MapPin className="mr-4 text-green-600" />
+                <MapPin className="mr-4 text-primary-lighter" />
                 <span className="text-gray-500">
                   Plot No. 40, Block D Chanika - Street, Dar es Salam, Tanzania
                 </span>
               </div>
               <div className="flex items-center">
-                <Phone className="mr-4 text-green-600" />
+                <Phone className="mr-4 text-primary-lighter" />
                 <div className=" flex">
                   <span className="text-gray-500 mr-3">+255 745 333 833</span>
                   <Tally2 color="gray" />
@@ -106,7 +106,7 @@ export const Contact = () => {
                 </div>
               </div>
               <div className="flex items-center">
-                <Mail className="mr-4 text-green-600" />
+                <Mail className="mr-4 text-primary-lighter" />
                 <span className="text-gray-500">info@ilalacollege.ac.tz</span>
               </div>
             </div>
@@ -121,7 +121,7 @@ export const Contact = () => {
                   href="https://facebook.com"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="text-green-700 hover:text-white transition"
+                  className="text-primary-light hover:text-white transition"
                 >
                   <i className="fab fa-facebook-f text-2xl"></i>
                 </a>
@@ -129,7 +129,7 @@ export const Contact = () => {
                   href="https://twitter.com"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="text-green-700 hover:text-white transition"
+                  className="text-primary-light hover:text-white transition"
                 >
                   <i className="fab fa-twitter text-2xl"></i>
                 </a>
@@ -137,7 +137,7 @@ export const Contact = () => {
                   href="https://linkedin.com"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="text-green-700 hover:text-white transition"
+                  className="text-primary-light hover:text-white transition"
                 >
                   <i className="fab fa-linkedin-in text-2xl"></i>
                 </a>
@@ -145,7 +145,7 @@ export const Contact = () => {
                   href="https://instagram.com"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="text-green-700 hover:text-white transition"
+                  className="text-primary-light hover:text-white transition"
                 >
                   <i className="fab fa-instagram text-2xl"></i>
                 </a>
