@@ -59,9 +59,12 @@ export const About = () => {
       initial={{ opacity: 0 }}
       animate={{ opacity: 1 }}
       exit={{ opacity: 0 }}
-      className="min-h-screen bg-gray-50 rounded-l-2xl py-8 md:py-16"
+      className="min-h-screen bg-gray-50 rounded-t-3xl relative py-8 md:py-16"
     >
-      <div className="container mx-auto px-4">
+      {/* Top About Us Gradient */}
+      <div className="absolute inset-0 bg-gradient-to-t from-transparent via-transparent to-gray-100 pointer-events-none"></div>
+
+      <div className="container mx-auto px-4 relative z-10">
         <h2 className="text-2xl md:text-4xl font-bold text-center text-secondary mb-8 md:mb-12">
           About Our College
         </h2>

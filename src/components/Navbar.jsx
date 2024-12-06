@@ -2,8 +2,10 @@ import React, { useState, useRef, useEffect } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import { Menu, X } from "lucide-react";
 import logo from "../assets/images/logo.png";
+import { useNavigate } from "react-router-dom";
 
 const Navbar = () => {
+  const navigate = useNavigate();
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const menuRef = useRef(null);
 
@@ -55,7 +57,12 @@ const Navbar = () => {
     <nav className="sticky top-0 z-50 bg-white/80 backdrop-blur-md shadow-md">
       <div className="container mx-auto flex justify-between items-center py-2 px-4 md:p-4">
         {/* Logo and College Name */}
-        <div className="flex items-center space-x-2 md:space-x-4">
+        <div
+          className="flex items-center space-x-2 md:space-x-4 hover:cursor-pointer"
+          onClick={() => {
+            navigate("/");
+          }}
+        >
           <img src={logo} alt="School Logo" className="h-20 md:h-24 lg:h-24" />
           <h1 className="text-lg md:text-2xl lg:text-3xl font-bold text-primary-lighter w-2/3 md:w-full">
             City Institute of Health and Allied Sciences
