@@ -23,7 +23,6 @@ export const About = () => {
     college6,
     college7,
     college8,
-    college9,
   ];
 
   // Auto-switch carousel images every 3 seconds
