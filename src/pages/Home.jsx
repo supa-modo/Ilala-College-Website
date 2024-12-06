@@ -51,7 +51,6 @@ export const Home = () => {
     >
       {/* Carousel Section */}
       <div className="relative h-[60vh] w-full overflow-hidden">
-        {/* Background Images */}
         {carouselImages.map((image, index) => (
           <img
             key={index}

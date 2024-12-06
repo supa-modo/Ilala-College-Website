@@ -47,7 +47,7 @@ export const About = () => {
     history: {
       title: "Our Vision",
       content:
-        "Founded in 1985, our institution has grown from a small college to a renowned center of academic excellence, serving thousands of students from diverse backgrounds. Lorem ipsum dolor sit amet consectetur adipisicing elit. At magni omnis libero eaque modi, obcaecati aspernatur inventore, vel voluptatibus reiciendis labore illum blanditiis ea quae! Voluptatibus deserunt atque modi obcaecati.",
+        "Founded in 1985, our institution has grown from a small college to a renowned center of academic excellence, serving thousands of students from diverse backgrounds. Lorem ipsum dolor sit amet consectetur adipisicing elit. At magni omnis libero eaque modi, obcaecati aspernatur inventore, vel voluptatibus reiciendis labore illum blanditiis ea quae! ",
     },
     values: {
       title: "Core Values",
