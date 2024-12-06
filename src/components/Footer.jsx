@@ -7,7 +7,7 @@ const Footer = () => {
 
   return (
     // <footer className="bg-gradient-to-r from-green-700 font-semibold via-green-700 to-green-900 text-white py-12">
-    <footer className="bg-primary-dark font-semibold text-white py-12">
+    <footer className="bg-primary-dark font-semibold text-white py-4 md:py-12">
       <div className="container mx-auto px-4">
         {/* Top Section */}
         <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
@@ -22,7 +22,7 @@ const Footer = () => {
               City Institute of Health and Allied Sciences
             </h2>
             <p className="text-center md:text-left text-gray-300">
-              "Fostering Excellence in Education."
+              "Fostering Excellence in Healthcare Education."
             </p>
           </div>
 

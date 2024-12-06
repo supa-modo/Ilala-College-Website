@@ -7,7 +7,7 @@ export const Admissions = () => {
 
   const admissionSteps = [
     {
-      name: "Apply Online / Download Application form",
+      name: "Apply Online / Download Form",
       description:
         "For online applications, click on the Apply Now button and Navigate to the Application Page where you will follow the instructions to make a new application. If applying offline, you will need to download and print the application form from the downloads section below.",
     },
@@ -50,51 +50,54 @@ export const Admissions = () => {
       className="min-h-screen bg-gray-200 py-10"
     >
       <div className="container mx-auto px-4">
-        <h2 className="text-3xl font-bold text-center text-primary-lighter mb-6">
+        <h2 className="text-2xl md:text-3xl font-bold text-center text-primary-lighter mb-6">
           Admission Process
         </h2>
 
-        <p className="text-xl text-gray-700 px-4 mb-4">
+        <p className="text-base md:text-xl font-semibold md:font-normal text-gray-700 px-4 mb-4 text-center">
           Admission of students can be done in two ways when intakes are open.
           Check the steps below for guidance.
         </p>
 
-        {/* Steps Section */}
-        <div className="bg-white shadow-lg rounded-xl p-8">
-          <div className="flex justify-between mb-8">
-            {admissionSteps.map((admissionStep, index) => (
-              <div
-                key={admissionStep.name}
-                className={`flex flex-col items-center font-semibold ${
-                  index + 1 <= step ? "text-green-700" : "text-gray-400"
-                }`}
-              >
+        <div className="bg-white shadow-lg font-semibold rounded-xl p-4 md:p-8">
+          <div className="w-full">
+            <div className="flex flex-wrap justify-center items-center gap-4 sm:gap-6">
+              {admissionSteps.map((admissionStep, index) => (
                 <div
-                  className={`w-12 h-12 rounded-full mb-2 flex items-center justify-center border-2 ${
-                    index + 1 <= step
-                      ? "bg-green-700 text-white border-green-700"
-                      : "border-gray-300"
+                  key={admissionStep.name}
+                  className={`flex flex-col items-center font-semibold w-[calc(33%-1rem)] sm:w-[calc(25%-1.5rem)] md:w-[calc(20%-2rem)] lg:w-[calc(16.66%-2rem)] ${
+                    index + 1 <= step ? "text-green-700" : "text-gray-400"
                   }`}
                 >
-                  {index + 1}
+                  <div
+                    className={`w-10 h-10 md:w-12 md:h-12 rounded-full mb-2 flex items-center justify-center border-2 ${
+                      index + 1 <= step
+                        ? "bg-green-700 text-white border-green-700"
+                        : "border-gray-300"
+                    }`}
+                  >
+                    {index + 1}
+                  </div>
+                  <span className="text-center text-xs md:text-sm text-ellipsis font-semibold overflow-hidden whitespace-nowrap max-w-full">
+                    {admissionStep.name}
+                  </span>
                 </div>
-                <span className="text-center">{admissionStep.name}</span>
-              </div>
-            ))}
+              ))}
+            </div>
           </div>
 
           {/* Description Section */}
-          <div className="text-center mb-8">
-            <p className="text-lg text-gray-700 font-semibold max-w-4xl mx-auto">
+          <div className="text-center mt-4 mb-8">
+            <p className="text-base md:text-lg text-gray-700 font-semibold max-w-4xl mx-auto">
               {admissionSteps[step - 1].description}
             </p>
           </div>
 
           {/* Navigation Buttons */}
-          <div className="flex justify-center gap-4">
+          <div className="flex items-center justify-center gap-4">
             <button
               onClick={() => setStep(Math.max(step - 1, 1))}
-              className={`px-6 py-3 flex rounded-lg font-semibold ${
+              className={`px-4 md:px-6 py-2 md:py-3 flex rounded-lg font-semibold text-sm md:text-base ${
                 step > 1
                   ? "bg-primary-lighter text-white hover:bg-primary hover:shadow-xl"
                   : "bg-gray-300 text-gray-400 cursor-not-allowed"
@@ -107,7 +110,7 @@ export const Admissions = () => {
 
             <button
               onClick={() => setStep(Math.min(step + 1, admissionSteps.length))}
-              className={`px-5 py-3 rounded-lg flex font-semibold ${
+              className={`px-4 md:px-5 py-2 md:py-3 rounded-lg flex font-semibold text-sm md:text-base ${
                 step < admissionSteps.length
                   ? "bg-primary-lighter text-white hover:bg-primary hover:shadow-xl"
                   : "bg-gray-400 text-gray-200 cursor-not-allowed"
@@ -121,23 +124,23 @@ export const Admissions = () => {
         </div>
 
         {/* Downloads Section */}
-        <div className="mt-10 bg-white shadow-lg rounded-xl p-8">
-          <h3 className="text-2xl font-semibold text-center text-primary-lighter mb-6">
+        <div className="mt-10 bg-white shadow-lg rounded-xl p-4 md:p-8">
+          <h3 className="text-xl md:text-2xl font-semibold text-center text-primary-lighter mb-6">
             Document Downloads
           </h3>
           <ul className="space-y-4">
             {downloadLinks.map((link, index) => (
               <li
                 key={index}
-                className="flex items-center justify-between bg-gray-100 p-4 rounded-lg hover:shadow-lg transition"
+                className="flex flex-col sm:flex-row items-center justify-between bg-gray-100 p-4 rounded-lg hover:shadow-lg transition"
               >
-                <span className="text-lg font-semibold text-gray-700">
+                <span className="text-base md:text-lg font-semibold text-gray-700 mb-2 sm:mb-0">
                   {link.name}
                 </span>
                 <a
                   href={link.url}
                   download
-                  className="bg-primary-lighter font-semibold text-white px-4 py-2 rounded-lg hover:bg-primary"
+                  className="bg-primary-lighter font-semibold text-white px-4 py-2 rounded-lg hover:bg-primary text-sm md:text-base"
                 >
                   Download
                 </a>
@@ -149,3 +152,5 @@ export const Admissions = () => {
     </motion.div>
   );
 };
+
+export default Admissions;

@@ -9,7 +9,7 @@ export const TabsNavigation = ({ tabs, selectedTab, setSelectedTab }) => {
             key={tab}
             onClick={() => setSelectedTab(tab)}
             className={`
-              relative px-6 py-2 mx-2 rounded-md font-semibold text-lg transition-all duration-300 
+              relative px-6 py-2 mx-2 rounded-md font-semibold md:text-lg transition-all duration-300 
               ${
                 selectedTab === tab
                   ? "text-red-600"

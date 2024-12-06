@@ -93,7 +93,7 @@ export const Gallery = () => {
       exit={{ opacity: 0 }}
       className="container mx-auto px-4 py-8 min-h-screen"
     >
-      <h2 className="text-3xl font-bold mb-6 text-secondary text-center">
+      <h2 className="text-xl md:text-3xl font-bold mb-6 text-secondary text-center">
         Ilala Campus City Institute Gallery
       </h2>
       {/* Tabs Navigation */}
