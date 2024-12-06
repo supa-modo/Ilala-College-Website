@@ -55,7 +55,7 @@ const Navbar = () => {
 
   return (
     <nav className="sticky top-0 z-50 bg-white/80 backdrop-blur-md shadow-md">
-      <div className="container mx-auto flex justify-between items-center py-2 px-4 md:p-4">
+      <div className="container mx-auto flex justify-between items-center py-2 md:py-1 px-4 md:px-4">
         {/* Logo and College Name */}
         <div
           className="flex items-center space-x-2 md:space-x-4 hover:cursor-pointer"

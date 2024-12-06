@@ -59,7 +59,7 @@ export const About = () => {
       initial={{ opacity: 0 }}
       animate={{ opacity: 1 }}
       exit={{ opacity: 0 }}
-      className="min-h-screen bg-gray-50 rounded-t-3xl relative py-8 md:py-16"
+      className="min-h-screen bg-gray-50 rounded-t-3xl relative py-8 md:py-10"
     >
       {/* Top About Us Gradient */}
       <div className="absolute inset-0 bg-gradient-to-t from-transparent via-transparent to-gray-100 pointer-events-none"></div>
@@ -70,7 +70,7 @@ export const About = () => {
         </h2>
 
         {/* Responsive Tabs Section */}
-        <div className="bg-white shadow-lg rounded-xl overflow-hidden mb-8 md:mb-12">
+        <div className="bg-white shadow-lg rounded-xl border-t border-t-gray-200 overflow-hidden mb-8 md:mb-12">
           <div className="flex md:flex-row border-b">
             {Object.keys(tabs).map((tab) => (
               <button

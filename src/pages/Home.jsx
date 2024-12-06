@@ -61,7 +61,7 @@ export const Home = () => {
       className="min-h-screen bg-gray-50"
     >
       {/* Responsive Carousel Section */}
-      <div className="relative h-[60vh] sm:h-[50vh] md:h-[60vh] lg:h-[70vh] w-full overflow-hidden">
+      <div className="relative h-[60vh] sm:h-[50vh] md:h-[60vh] lg:h-[63vh] w-full overflow-hidden">
         {carouselImages.map((image, index) => (
           <img
             key={index}
@@ -126,7 +126,7 @@ export const Home = () => {
                 px-6 py-3 rounded-lg hover:bg-secondary transition transform 
                 hover:scale-105 shadow-lg"
               >
-                Explore Programs
+                Explore Our Programmes
               </button>
               <button
                 onClick={() =>
@@ -136,7 +136,7 @@ export const Home = () => {
                   )
                 }
                 className="w-full sm:w-auto bg-white text-secondary font-semibold 
-                px-6 py-3 rounded-lg hover:bg-gray-100 transition transform 
+                px-14 py-3 rounded-lg hover:bg-gray-100 transition transform 
                 hover:scale-105 shadow-lg"
               >
                 Apply Now
@@ -148,7 +148,7 @@ export const Home = () => {
 
       {/* Rest of the page on gray-100 background */}
       <div className="bg-gray-100">
-        <div className="container mx-auto px-4 py-8 sm:py-12 md:py-16">
+        <div className="container mx-auto px-4 pb-8 sm:pb-10 md:pb-12">
           <About />
           <hr className="" />
           <Academics />
