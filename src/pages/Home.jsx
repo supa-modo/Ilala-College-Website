@@ -3,15 +3,15 @@ import { useNavigate } from "react-router-dom";
 import { motion } from "framer-motion";
 import { About } from "../components/AboutUs";
 import { Contact } from "./Contact";
-import college1 from "../assets/images/college3.jpg";
-import college2 from "../assets/images/college4.jpg";
-import college3 from "../assets/images/college5.jpg";
-import college4 from "../assets/images/college2.jpg";
-import college5 from "../assets/images/college1.jpg";
-import college9 from "../assets/images/college0.jpg";
-import college6 from "../assets/images/college12.jpg";
-import college7 from "../assets/images/college13.jpg";
-import college8 from "../assets/images/college15.jpg";
+import college1 from "../assets/images/ilalaEx0.jpeg";
+import college2 from "../assets/images/ilalaEx01.jpeg";
+import college3 from "../assets/images/ilalaEx2.jpg";
+import college4 from "../assets/images/ilalaEx7.jpeg";
+import college5 from "../assets/images/ilalaEx9.jpeg";
+import college9 from "../assets/images/college4.jpg";
+import college6 from "../assets/images/ilalaEvent9.jpeg";
+import college7 from "../assets/images/college15.jpg";
+import college8 from "../assets/images/college12.jpg";
 import { Academics } from "./Programmes";
 
 export const Home = () => {

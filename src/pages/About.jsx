@@ -1,17 +1,31 @@
 import React, { useState, useEffect } from "react";
 import { motion } from "framer-motion";
-import college1 from "../assets/images/college3.jpg";
-import college2 from "../assets/images/college4.jpg";
-import college3 from "../assets/images/college5.jpg";
-import college4 from "../assets/images/college2.jpg";
-import college5 from "../assets/images/college1.jpg";
+import college1 from "../assets/images/ilalaEx0.jpeg";
+import college2 from "../assets/images/ilalaEx4.jpeg";
+import college3 from "../assets/images/ilalaEx2.jpg";
+import college4 from "../assets/images/ilalaEx7.jpeg";
+import college5 from "../assets/images/ilalaEx9.jpeg";
+import college6 from "../assets/images/ilalaEx3.jpeg";
+import college7 from "../assets/images/ilalaEx6.jpeg";
+import college8 from "../assets/images/ilalaEx11.jpeg";
+import college9 from "../assets/images/ilalaEx8.jpeg";
 
 export const About = () => {
   const [activeTab, setActiveTab] = useState("mission");
   const [currentImageIndex, setCurrentImageIndex] = useState(0);
 
   // Carousel images - using placeholder images
-  const carouselImages = [college1, college2, college3, college4, college5];
+  const carouselImages = [
+    college1,
+    college2,
+    college3,
+    college4,
+    college5,
+    college6,
+    college7,
+    college8,
+    college9,
+  ];
 
   // Auto-switch carousel images every 3 seconds
   useEffect(() => {
