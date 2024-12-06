@@ -11,7 +11,6 @@ import college5Path from "../assets/images/ilalaEx9.jpeg";
 import college6Path from "../assets/images/ilalaEx3.jpeg";
 import college7Path from "../assets/images/ilalaEx6.jpeg";
 import college8Path from "../assets/images/ilalaEx11.jpeg";
-import college9Path from "../assets/images/ilalaEx8.jpeg";
 import college10Path from "../assets/images/ilalaEx01.jpeg";
 import college11Path from "../assets/images/ilalaEx10.jpeg";
 
@@ -48,7 +47,6 @@ export const Gallery = () => {
       { image: college5Path, id: "campus5" },
       { image: college6Path, id: "campus6" },
       { image: college7Path, id: "campus7" },
-      { image: college9Path, id: "campus9" },
       { image: college10Path, id: "campus10" },
       { image: college11Path, id: "campus11" },
       { image: college3Path, id: "campus3-repeat" },
@@ -65,14 +63,12 @@ export const Gallery = () => {
       { image: college3Path, id: "events4" },
       { image: college4Path, id: "events5" },
       { image: college5Path, id: "events6" },
-      { image: college9Path, id: "events7" },
       { image: college4Path, id: "events8" },
       { image: college2Path, id: "events9" },
       { image: college7Path, id: "events10" },
       { image: college8Path, id: "events11" },
     ],
     Academics: [
-      { image: college9Path, id: "academic1" },
       { image: college1Path, id: "academic2" },
       { image: college2Path, id: "academic3" },
       { image: college3Path, id: "academic4" },
